@@ -1,0 +1,7 @@
+#ignore executable files
+*.exe
+*.out
+
+#ignore VS Code output folder
+/output/
+.vscode/
