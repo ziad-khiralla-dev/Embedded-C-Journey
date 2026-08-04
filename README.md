@@ -46,7 +46,7 @@ Embedded-C-Journey/
 
 ## 🛠️ Weekly Breakdown & Milestones :
 
-###🔹 **Week 1** : C Compilation Pipeline & Under the Hood ExecutionCore 
+### **Week 1** : C Compilation Pipeline & Under the Hood ExecutionCore 
 
 **Focus** : Understanding how C code translates into executable machine code for microcontrollers.
 
@@ -56,7 +56,7 @@ Embedded-C-Journey/
 
 Understanding standard object formats (.elf, .hex) and linker scripts.
 
-###🔹 **Week 2** : Infrastructure Layer (LIB) 
+### **Week 2** : Infrastructure Layer (LIB) 
 
 **Core Focus** : Building a solid software foundation to ensure code portability, safety, and zero function overhead.
 
@@ -68,7 +68,7 @@ Defined standard status enumerations (ErrorStatus_t) for robust API error handli
 
 Ensured strict operator precedence protection using double-parentheses and explicit unsigned literals (1U).
 
-###🔹 **Week 3** : MCAL Layer - Digital Input/Output (DIO) DriverCore 
+### **Week 3** : MCAL Layer - Digital Input/Output (DIO) DriverCore 
 
 **Focus** : Bridging pure software with hardware control by implementing a 3-file modular DIO Driver.
 
@@ -100,6 +100,6 @@ Reusability & Portability : Drivers engineered to be easily ported across differ
 
 [ ] Communication Protocols: Drivers for UART, SPI, I2C, and CAN Bus.
 
-## 👨‍💻 Maintained by : Ziad Khiralla
+### 👨‍💻 Maintained by : Ziad Khiralla
 
-## 🎯 Target Goal: Automotive Embedded Systems Engineer (AUTOSAR / CAN Bus / Real-Time Systems)
+### 🎯 Target Goal: Automotive Embedded Systems Engineer (AUTOSAR / CAN Bus / Real-Time Systems)
