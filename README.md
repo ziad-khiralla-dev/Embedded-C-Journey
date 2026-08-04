@@ -26,7 +26,6 @@ Embedded-C-Journey/
 │   ├── BIT_MATH.h              # Bitwise manipulation macros
 │   ├── STD_TYPES.h             # Explicit-width data types
 │   ├── main.c                  # Test application
-│   └── output/                 # Generated binaries
 │
 └── 03_Week3_DIO_Driver/
     ├── LIB/                    # Reusable Infrastructure Libraries
