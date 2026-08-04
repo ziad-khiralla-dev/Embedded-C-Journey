@@ -38,6 +38,9 @@ Embedded-C-Journey/
     │       └── DIO_program.c   # Driver implementation logic
     ├── .gitignore              # Excludes compiled binaries from Git tracking
     └── README.md               # Project documentation
+🛠️ Weekly Breakdown & Milestones
+🔹 Week 1: C Compilation Pipeline & Under the Hood Execution
+Core Focus: Understanding how C code translates into executable machine code for microcontrollers.
 
 🛠️ Weekly Breakdown & Milestones
 
