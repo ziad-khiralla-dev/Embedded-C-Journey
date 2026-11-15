@@ -39,8 +39,22 @@ Embedded-C-Journey/
 │   ├── .gitignore            # Excludes compiled binaries from Git tracking
 │   └── README.md             # Project documentation
 │
-└── 04_Week4_Advanced_C_Pointers_Callbacks/
-    └── main.c                # Advanced C concepts: Function Pointers, Callbacks & Jump Tables
+├── 04_Week4_Advanced_C_Pointers_Callbacks/
+│   └── main.c                # Advanced C concepts: Function Pointers, Callbacks & Jump Tables
+│
+└── 05_Week5_Memory_Mapping_Registers/
+    ├── LIB/                  # Reusable Infrastructure Libraries
+    │   ├── BIT_MATH.h
+    │   └── STD_TYPES.h
+    ├── MCAL/
+    │   ├── GPIO/             # GPIO Driver Implementation
+    │   │   ├── gpio_interface.h
+    │   │   └── gpio_program.c
+    │   └── include/          # Hardware Definition Layer
+    │       └── mcu_hw.h
+    ├── main.c                # Test application
+    ├── .gitignore            # Excludes compiled binaries
+    └── README.md             # Week 5 documentation
 ```
 
 ---
@@ -74,6 +88,13 @@ Embedded-C-Journey/
 * **Function Pointers & Callbacks:** Implemented decoupled communication between asynchronous driver events (e.g., UART transmission complete) and upper application layers without tight coupling.
 * **Jump Tables (Array of Function Pointers):** Designed high-performance lookup tables to replace slow conditional branching (`switch-case` / `if-else`) with $O(1)$ time complexity for automotive state machine management.
 
+### 🔹 Week 5: Memory Mapping & Direct Register Manipulation (Bare-Metal GPIO Driver)
+**Core Focus:** Transitioning from macro-based abstractions to direct hardware memory mapping and structured register manipulation for ARM Cortex-M architecture.  
+**Architecture & Deliverables:**
+* **`mcu_hw.h` (Hardware Definition Layer):** Mapped memory and bus base addresses using `typedef struct` paired with `volatile` qualifiers to ensure direct hardware access and prevent unwanted compiler optimizations.
+* **`gpio_interface.h` (API Contract):** Established a clean, decoupled interface defining port identifiers, pin modes, output types, and standard API prototypes.
+* **`gpio_program.c` (Implementation Layer):** Implemented core GPIO driver functions (`GPIO_voidSetPinMode`, `GPIO_voidSetPinOutputType`, `GPIO_voidSetPinValue`, `GPIO_u8GetPinValue`) using precise **Bit Masking** logic (`&= ~` and `|=`) via pointer dereferencing for optimal performance.
+
 ---
 
 ## 🎯 Key Software Engineering Practices Applied
@@ -86,7 +107,7 @@ Embedded-C-Journey/
 ## 🚀 Upcoming Roadmap
 * [x] **Week 1-3:** Compilation Pipeline, LIB Infrastructure, and MCAL DIO Driver.
 * [x] **Week 4:** Advanced C Concepts - Function Pointers, Callbacks, and Jump Tables.
-* [ ] **Week 5:** Memory Mapping & Direct Register Manipulation (Bare-Metal Peripheral Access).
+* [x] **Week 5:** Memory Mapping & Direct Register Manipulation (Bare-Metal Peripheral Access).
 * [ ] **Week 6+:** Interrupts (EXI), Timers & PWM, and Communication Protocols (UART, SPI, I2C, CAN Bus).
 
 ---
